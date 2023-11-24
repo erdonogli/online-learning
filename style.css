@@ -1,0 +1,232 @@
+:root {
+    --font: 'DM Sans', sans-serif;
+    --black: #222;
+    --blue: #086cf9;
+    --white: #fff;
+}
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 144px;
+    background-color: var(--white);
+}
+
+body {
+    font-family: var(--font);
+}
+
+/* haeder */
+.container--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.links {
+    list-style: none;
+}
+
+.link .link__url {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    align-items: center;
+    display: inline-flex;
+}
+
+.link .link__url--logo {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal
+}
+
+.navigation--sec {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.link__url--blue {
+    color: var(--blue) !important;
+}
+
+.link__url--btn {
+    background-color: var(--blue);
+    color: var(--white) !important;
+    padding: 12px 24px;
+    border-radius: 4px;
+
+}
+
+/* main */
+/* hero-container */
+.container--hero-section {
+    width: 100%;
+    height: 739px;
+    background: url(./images/main/hero/photo_2023-11-19_10-24-51.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 0;
+}
+
+.container--hero-section::before {
+    background: rgba(0, 0, 0, 0.54);
+    width: 1440px;
+    height: 739px;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 100px;
+    z-index: -1;
+}
+.hero-first__title {
+    color: var(--white);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 100px;
+}
+
+.hero-first__text {
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    width: 867px;
+    margin: 0 auto;
+}
+
+.hero-first {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link__url--hero {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.cards {
+    list-style: none;
+    display: flex;
+    padding: 56px 88px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-second {
+    background-color: var(--white);
+    border-radius: 4px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 962px;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0px 11px 35px 0px rgba(0, 0, 0, 0.08);
+    position: absolute;
+}
+
+.card__2__card__title {
+    color: var(--black);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.card__2__card__url {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* second */
+.container--second-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 184px;
+    align-items: center;
+}
+
+.second-section-info {
+    width: 519px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.second-section-info__title {
+    color: var(--black);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.second-section-info__text {
+    color: #555;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    width: 478px;
+}
+
+.second-section-info__text--color {
+    color: var(--black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 489px;
+}
+.card__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* third */
