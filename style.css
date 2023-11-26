@@ -3,6 +3,7 @@
     --black: #222;
     --blue: #086cf9;
     --white: #fff;
+    --blur-bg:#d3e5fe;
 }
 
 *::before,
@@ -287,4 +288,9 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* footer */
+.container--footer {
+    background: var(--blur-bg);
 }
